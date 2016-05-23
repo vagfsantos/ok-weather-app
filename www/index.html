@@ -12,18 +12,37 @@
 
         <script type="text/javascript" src="js/libs/angular.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
         <script type="text/javascript" src="js/controllers/main-controller.js"></script>
+
+        <script type="text/javascript" src="js/directives/search-page.js"></script>
 
         <title>OK!Weather - The weather, all the time.</title>
     </head>
-    <body>
+    <body class="white">
 
-      <ng-view>
-          <div ng-controller="MainController">
-            <h1>{{ok}}</h1>
+      <header>
+        <nav>
+          <div class="nav-wrapper blue">
+            <a href="#" class="ok-brand brand-logo left waves-effect waves-light">OK!Weather</a>
+            <ul class="right">
+              <li><a href="#" class="waves-effect waves-light"><i class="material-icons">search</i></a></li>
+              <li><a href="#" class="waves-effect waves-light"><i class="material-icons">more_vert</i></a></li>
+            </ul>
           </div>
-      </ng-view>
-      
+        </nav>
+
+      </header>
+
+      <section class="container">
+        <ng-view>
+            <div ng-controller="MainController">
+              <h1>{{ok}}</h1>
+            </div>
+            <search-page class="valing-wrapper"></search-page>
+        </ng-view>
+      </section>
+
         <!-- <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="js/libs/jquery.min.js"></script>
         <script type="text/javascript" src="js/libs/materialize.min.js"></script>
