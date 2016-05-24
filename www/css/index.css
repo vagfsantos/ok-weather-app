@@ -1,9 +1,22 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
 .ok-brand{
-  font-size: 1.6rem !important;
+  font-size: 1.4rem !important;
   text-transform: uppercase;
   font-weight: bold;
 }
 
+.container{
+  margin-top: 40px;
+}
 
 
  /* label focus color */

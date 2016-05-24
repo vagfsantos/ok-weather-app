@@ -19,26 +19,10 @@
 
         <title>OK!Weather - The weather, all the time.</title>
     </head>
-    <body class="white">
-
-      <header>
-        <nav>
-          <div class="nav-wrapper blue">
-            <a href="#" class="ok-brand brand-logo left waves-effect waves-light">OK!Weather</a>
-            <ul class="right">
-              <li><a href="#" class="waves-effect waves-light"><i class="material-icons">search</i></a></li>
-              <li><a href="#" class="waves-effect waves-light"><i class="material-icons">more_vert</i></a></li>
-            </ul>
-          </div>
-        </nav>
-
-      </header>
+    <body>
 
       <section class="container">
         <ng-view>
-            <div ng-controller="MainController">
-              <h1>{{ok}}</h1>
-            </div>
             <search-page class="valing-wrapper"></search-page>
         </ng-view>
       </section>
