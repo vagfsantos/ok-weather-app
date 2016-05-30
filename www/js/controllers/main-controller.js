@@ -2,7 +2,7 @@
   okweather.app.controller('MainController', function($scope, $http){
     $http({
     	method: 'GET',
-    	url:'localhost:3000'
+    	url:'https://okweather.herokuapp.com/'
     })
     .then(
     	function(data){
