@@ -7,7 +7,7 @@
 window.onload = function(){
 	$.ajax({
 		method:'get',
-		url:'https://okweather.herokuapp.com/',
+		url:'https://okweather.herokuapp.com',
 		//contentType: "application/json",
 		dataType: 'jsonp',
 		success: function(data){

@@ -13,6 +13,9 @@ app.listen(port, function(){
 app.get('/', function(req, res){
 	var weather = '';
 
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
 	var options = {
 		hostname:'servicos.cptec.inpe.br',
 		path:'/XML/capitais/condicoesAtuais.xml',
