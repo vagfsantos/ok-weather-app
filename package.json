@@ -4,7 +4,7 @@
   "description": "A weather hibrid mobile app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "node app.js"
   },
   "author": "Vagner Ferreira Santos",
   "license": "ISC",

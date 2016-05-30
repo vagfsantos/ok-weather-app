@@ -3,7 +3,9 @@ var http = require('http');
 var json = require("simple-xml2json");
 var iconv = require('iconv-lite');
 
-app.listen(3000, function(){
+var port = process.env.PORT || 3000;
+
+app.listen(port, function(){
 	console.log('servidor ok...');
 });
 
