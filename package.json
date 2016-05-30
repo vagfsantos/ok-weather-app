@@ -9,6 +9,12 @@
   "author": "Vagner Ferreira Santos",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.5.5"
+    "angular": "^1.5.5",
+    "body-parser": "^1.15.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "iconv-lite": "^0.4.13",
+    "simple-xml2json": "^1.2.3",
+    "xml2js": "^0.4.16"
   }
 }
